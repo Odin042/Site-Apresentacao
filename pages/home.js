@@ -1,5 +1,6 @@
-import {Flex,Box,Button,Image,Icon,chakra,Stack,IconButton,ButtonGroup} from '@chakra-ui/react'
+import {Flex,Box,Button,Image,Icon,chakra,Stack,IconButton,ButtonGroup,useColorModeValue,useColorMode} from '@chakra-ui/react'
 import NavBar from '../components/navBar'
+import theme from '../theme.js'
 import React from 'react'
 import footer from '../components/footer'
 import { MdEmail, MdLocationOn } from 'react-icons/md'
@@ -7,16 +8,27 @@ import {BsFillBriefcaseFill} from 'react-icons/bs'
 import {DiJsBadge} from 'react-icons/di'
 import {FaBookOpen} from 'react-icons/fa'
 import {IoMdContact,IoDocumentAttachOutline} from 'react-icons/io' 
+import {MoonIcon,AttachmentIcon} from '@chakra-ui/icons'
 
-
+  
+ 
 
 const home = () => {
+  const {toggleColorMode} = useColorMode()
+
+
+const bgButton = useColorModeValue('teal.400', 'gray.600')
+const bg= useColorModeValue('white', 'gray.800')
+const bgBox = useColorModeValue('teal.700' , 'gray.900')
+const bgBox2 = useColorModeValue('teal.400' , 'gray.600')
+
+
     return (
   <div>
     <Flex
       p={100}
       w="auto"
-      bg='white'
+      bg={bg}
       justifyContent="center"
       
       
@@ -48,7 +60,7 @@ const home = () => {
         />
        
       
-        <Flex alignItems="center" px={6} py={3} bg='teal.700'>
+        <Flex alignItems="center" px={6} py={3} bg={bgBox}>
           <Icon as={DiJsBadge} h={6} w={6} color="white" />
 
           <chakra.h1 mx={3} color="white" fontWeight="bold" fontSize="lg">
@@ -58,9 +70,9 @@ const home = () => {
 
         <Box py={4} 
         px={6}
-        bg='teal.400'
+        bg={bgBox2}
         color='white'
-        _hover={{color:'gray.600'}} >
+         >
           
           
           <chakra.h1
@@ -119,7 +131,7 @@ const home = () => {
     <Flex
       p={100}
       w="auto"
-      bg='white'
+      bg={bg}
       justifyContent="center"
       
       
@@ -146,7 +158,7 @@ const home = () => {
       >
        
       
-        <Flex alignItems="center" px={6} py={3} bg='teal.700'>
+        <Flex alignItems="center" px={6} py={3} bg={bgBox}>
           <Icon as={FaBookOpen} h={6} w={6} color="white" />
 
           <chakra.h1 mx={3} color="white" fontWeight="bold" fontSize="lg">
@@ -156,9 +168,9 @@ const home = () => {
 
         <Box py={4} 
         px={6}
-        bg='teal.400'
+        bg={bgBox2}
         color='white'
-        _hover={{color:'gray.600'}} >
+         >
           
           
           <chakra.h1
@@ -175,7 +187,7 @@ const home = () => {
     <Flex
       p={100}
       w="auto"
-      bg='white'
+      bg={bg}
       justifyContent="center"
       
       
@@ -202,7 +214,7 @@ const home = () => {
       >
        
       
-        <Flex alignItems="center" px={6} py={3} bg='teal.700'>
+        <Flex alignItems="center" px={6} py={3} bg={bgBox}>
           <Icon as={IoMdContact} h={6} w={6} color="white" />
 
           <chakra.h1 mx={3} color="white" fontWeight="bold" fontSize="lg">
@@ -212,9 +224,9 @@ const home = () => {
 
         <Box py={4} 
         px={6}
-        bg='teal.400'
+        bg={bgBox2}
         color='white'
-        _hover={{color:'gray.600'}} >
+         >
           
           
           <chakra.h1
@@ -236,22 +248,34 @@ const home = () => {
       onClick={() => {window.open('./files/GuilhermeFernandesSilva.pdf')}}
       variant='solid'
       size='lg'
-      color='white' 
+      color= 'white'
       value='download'
       boxShadow='dark-lg'
       _hover={{ transform: 'scale(1.1)'}}
-      as={IoDocumentAttachOutline}
+      leftIcon={<AttachmentIcon />}
       ml={1130} 
       mt={-300}
-      bg={'whatsapp.500'} > 
+      bg={bgButton} > 
            Baixe meu currículo
 
       </Button>
-
-      
-
-
-    </Stack>
+      </Stack>
+      <Stack
+      direction='row' 
+      spacing={10}>
+      <Button 
+      onClick={toggleColorMode}
+      leftIcon={<MoonIcon />}
+      variant='solid'
+      size='lg' 
+      boxShadow='dark-lg'
+      _hover={{ transform: 'scale(1.1)'}}
+      ml={1420} 
+      mt={-300}
+      > 
+          Dark Mode
+       </Button>
+      </Stack>
     </div>
     
 
