@@ -26,8 +26,7 @@ const bgBox2 = useColorModeValue('teal.400' , 'gray.600')
     return (
   <div>
     <Flex
-      p={100}
-      w="auto"
+      p={{ base: 100, md: 8 }}
       bg={bg}
       justifyContent="center"
       
@@ -35,11 +34,12 @@ const bgBox2 = useColorModeValue('teal.400' , 'gray.600')
       
     >
       <Box 
-        w="50%"
-        h="300%"
-        mt={-100}
-        mb={-600}
-        ml={-1050}
+        p={{base: '100px', md: '1px'}}
+        w={{base: '100%', md: '30%'}}
+        ml={{base: '320px', md: '180px', lg: '-1810px'}}
+        mr={{base: '320px', md: '100px', lg: '16px'}}
+        mt={{base: '-100px', md: '-100px', lg: '-47px'}}
+        mb={{base: '-100px', md: '-100px', lg: '-430px'}}
         shadow="xl"
         boxShadow="2xl"
         rounded="lg"
@@ -119,11 +119,6 @@ const bgBox2 = useColorModeValue('teal.400' , 'gray.600')
             mt={4}
             
           >
-            <Icon as={MdEmail} h={6} w={6} mr={2} />
-
-            <chakra.h1 px={2} fontSize="sm">
-              guilherme.sylva92@gmail.com
-            </chakra.h1>
           </Flex>
         </Box>
       </Box>
@@ -139,11 +134,12 @@ const bgBox2 = useColorModeValue('teal.400' , 'gray.600')
       
     >
       <Box 
-        w="50%"
-        h="10%"
-        mt={-400}
-        mb={-100}
-        ml={800}
+        p={{base: '10px', md: '0px'}}
+        w={{base: '80%', md: '25%'}}
+        ml={{base: '320px', md: '180px', lg: '-100px'}}
+        mr={{base: '320px', md: '100px', lg: '16px'}}
+        mt={{base: '100px', md: '100px', lg: '-500px'}}
+        mb={{base: '-100px', md: '100px', lg: '100px'}}
         shadow="xl"
         boxShadow="dark-lg"
         rounded="lg"
