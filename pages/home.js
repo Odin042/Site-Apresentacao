@@ -27,7 +27,10 @@ const bgBox2 = useColorModeValue('teal.400' , 'gray.600')
 return (
   <div>
     <Flex
+<<<<<<< HEAD
 <<<<<<< Updated upstream
+=======
+>>>>>>> main
       maxW="100vw"
       p={{ base: 100, md: 8 }}
 =======
@@ -40,6 +43,7 @@ return (
       
     >
       <Box 
+<<<<<<< HEAD
 <<<<<<< Updated upstream
         maxW="100%"
         ml={{md:'-40%',lg: '-75%'}} 
@@ -52,6 +56,11 @@ return (
         mt={{ md: '-100px', lg: '-47px'}}
         mb={{ md: '-100px', lg: '-800px'}}
 >>>>>>> Stashed changes
+=======
+        maxW="100%"
+        ml={{md:'-40%',lg: '-75%'}} 
+        mt={{md:'-90%',lg: '-6%'}}
+>>>>>>> main
         shadow="xl"
         boxShadow="2xl"
         rounded="lg"
@@ -142,10 +151,13 @@ return (
       mb={{md:'-40%', lg:'-14%'}}
       mt={{md:'-40%', lg:'-14%'}}
       ml={{md:'40%', lg:'-11%'}}
+<<<<<<< HEAD
 =======
       p={120}
       w="full"
 >>>>>>> Stashed changes
+=======
+>>>>>>> main
       bg={bg}
       justifyContent="center"
       
@@ -155,12 +167,16 @@ return (
       
     >
       <Box 
+<<<<<<< HEAD
 <<<<<<< Updated upstream
+=======
+>>>>>>> main
         w={{ md:'70%',lg:'50%'}}
         ml={{ md: '180px', lg: '45%'}}
         mr={{ md: '100px', lg: '1%'}}
         mt={{ md: '-40px', lg: '-33%'}}
         mb={{ md: '100px', lg: '33%'}}
+<<<<<<< HEAD
 =======
         p={{base: '200px', md: '0px'}}
         w={{base: '120%', md: '46%'}}
@@ -169,6 +185,8 @@ return (
         mt={{ md: '100px', lg: '-100px'}}
         mb={{ md: '100px', lg: '280px'}}
 >>>>>>> Stashed changes
+=======
+>>>>>>> main
         shadow="xl"
         boxShadow="dark-lg"
         rounded="lg"
@@ -221,7 +239,10 @@ return (
       
     >
       <Box 
+<<<<<<< HEAD
 <<<<<<< Updated upstream
+=======
+>>>>>>> main
         w={{ md:'70%',lg:'53%'}}
         ml={{ md: '180px', lg: '42%'}}
         mr={{ md: '100px', lg: '1%'}}
