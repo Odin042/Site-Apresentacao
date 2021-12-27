@@ -15,6 +15,7 @@ import {MoonIcon,AttachmentIcon} from '@chakra-ui/icons'
 
 const home = () => {
   const {toggleColorMode} = useColorMode()
+  
 
 
 const bgButton = useColorModeValue('teal.400', 'gray.600')
@@ -23,10 +24,15 @@ const bgBox = useColorModeValue('teal.700' , 'gray.900')
 const bgBox2 = useColorModeValue('teal.400' , 'gray.600')
 
 
-    return (
+return (
   <div>
     <Flex
+<<<<<<< Updated upstream
+      maxW="100vw"
       p={{ base: 100, md: 8 }}
+=======
+      p={{ base: 100, md: 3}}
+>>>>>>> Stashed changes
       bg={bg}
       justifyContent="center"
       
@@ -34,12 +40,18 @@ const bgBox2 = useColorModeValue('teal.400' , 'gray.600')
       
     >
       <Box 
+<<<<<<< Updated upstream
+        maxW="100%"
+        ml={{md:'-40%',lg: '-75%'}} 
+        mt={{md:'-90%',lg: '-6%'}}
+=======
         p={{base: '100px', md: '1px'}}
         w={{base: '100%', md: '30%'}}
-        ml={{base: '320px', md: '180px', lg: '-1810px'}}
-        mr={{base: '320px', md: '100px', lg: '16px'}}
-        mt={{base: '-100px', md: '-100px', lg: '-47px'}}
-        mb={{base: '-100px', md: '-100px', lg: '-430px'}}
+        ml={{ md: '180px', lg: '-1810px'}}
+        mr={{ md: '100px', lg: '16px'}}
+        mt={{ md: '-100px', lg: '-47px'}}
+        mb={{ md: '-100px', lg: '-800px'}}
+>>>>>>> Stashed changes
         shadow="xl"
         boxShadow="2xl"
         rounded="lg"
@@ -124,27 +136,43 @@ const bgBox2 = useColorModeValue('teal.400' , 'gray.600')
       </Box>
     </Flex>
     <Flex
+<<<<<<< Updated upstream
       p={100}
       w="auto"
+      mb={{md:'-40%', lg:'-14%'}}
+      mt={{md:'-40%', lg:'-14%'}}
+      ml={{md:'40%', lg:'-11%'}}
+=======
+      p={120}
+      w="full"
+>>>>>>> Stashed changes
       bg={bg}
       justifyContent="center"
       
       
       
       
+      
     >
       <Box 
-        p={{base: '10px', md: '0px'}}
-        w={{base: '80%', md: '25%'}}
-        ml={{base: '320px', md: '180px', lg: '-100px'}}
-        mr={{base: '320px', md: '100px', lg: '16px'}}
-        mt={{base: '100px', md: '100px', lg: '-500px'}}
-        mb={{base: '-100px', md: '100px', lg: '100px'}}
+<<<<<<< Updated upstream
+        w={{ md:'70%',lg:'50%'}}
+        ml={{ md: '180px', lg: '45%'}}
+        mr={{ md: '100px', lg: '1%'}}
+        mt={{ md: '-40px', lg: '-33%'}}
+        mb={{ md: '100px', lg: '33%'}}
+=======
+        p={{base: '200px', md: '0px'}}
+        w={{base: '120%', md: '46%'}}
+        ml={{ md: '180px', lg: '690px'}}
+        mr={{ md: '100px', lg: '5px'}}
+        mt={{ md: '100px', lg: '-100px'}}
+        mb={{ md: '100px', lg: '280px'}}
+>>>>>>> Stashed changes
         shadow="xl"
         boxShadow="dark-lg"
         rounded="lg"
         overflow={'hidden'}
-        position='relative'
         _hover={{ transform: 'scale(1.1)' }}
         
         
@@ -182,7 +210,9 @@ const bgBox2 = useColorModeValue('teal.400' , 'gray.600')
     </Flex>
     <Flex
       p={100}
-      w="auto"
+      w='auto'
+      mb={{md:'40%', lg:'60%'}}
+      ml={{md:'40%', lg:'-6%'}}
       bg={bg}
       justifyContent="center"
       
@@ -191,17 +221,31 @@ const bgBox2 = useColorModeValue('teal.400' , 'gray.600')
       
     >
       <Box 
-        w="50%"
-        h="10%"
-        mt={-400}
-        mb={-100}
-        ml={800}
+<<<<<<< Updated upstream
+        w={{ md:'70%',lg:'53%'}}
+        ml={{ md: '180px', lg: '42%'}}
+        mr={{ md: '100px', lg: '1%'}}
+        mt={{ md: '390px', lg: '-26%'}}
+        mb={{ md: '800px', lg: '70%'}}
         shadow="xl"
         boxShadow="dark-lg"
         rounded="lg"
         overflow={'hidden'}
-        position='relative'
         _hover={{ transform: 'scale(1.1)' }}
+=======
+       p={{base: '200px', md: '0px'}}
+       w={{base: '120%', md: '46%'}}
+       ml={{ md: '180px', lg: '690px'}}
+       mr={{ md: '100px', lg: '5px'}}
+       mt={{ md: '100px', lg: '-280px'}}
+       mb={{ md: '100px', lg: '280px'}}
+       shadow="xl"
+       boxShadow="dark-lg"
+       rounded="lg"
+       overflow={'hidden'}
+       position='relative'
+       _hover={{ transform: 'scale(1.1)' }}
+>>>>>>> Stashed changes
         
         
         
@@ -236,42 +280,46 @@ const bgBox2 = useColorModeValue('teal.400' , 'gray.600')
         </Box>
       </Box>
     </Flex>
+    <Flex
+    w={{ md:'70%',lg:'53%'}}
+    ml={{ md: '180px', lg: '42%'}}
+    mr={{ md: '100px', lg: '1%'}}
+    mt={{ md: '100px', lg: '-126%'}}
+    mb={{ md: '100px', lg: '0%'}}
+    gap={20}>
     <Stack 
-    direction='row' 
-    spacing={10} >
+    direction='row' >
       <Button 
       href={'./files/GuilhermeFernandesSilva.pdf'}
       onClick={() => {window.open('./files/GuilhermeFernandesSilva.pdf')}}
       variant='solid'
       size='lg'
       color= 'white'
+      ml={'40px'}
       value='download'
       boxShadow='dark-lg'
       _hover={{ transform: 'scale(1.1)'}}
       leftIcon={<AttachmentIcon />}
-      ml={1130} 
-      mt={-300}
       bg={bgButton} > 
            Baixe meu currículo
 
       </Button>
       </Stack>
       <Stack
-      direction='row' 
-      spacing={10}>
+      direction='row' >
       <Button 
       onClick={toggleColorMode}
       leftIcon={<MoonIcon />}
       variant='solid'
       size='lg' 
+      mr={'50px'}
       boxShadow='dark-lg'
       _hover={{ transform: 'scale(1.1)'}}
-      ml={1420} 
-      mt={-300}
       > 
           Dark Mode
        </Button>
       </Stack>
+      </Flex>
     </div>
     
 
